@@ -17,7 +17,8 @@
     "build:watch": "npm run clean && tsc --watch",
     "pack": "webpack --config webpack/webpack.config.js",
     "prepublish": "npm run build:clean",
-    "betapublish": "npm publish --tag beta"
+    "betapublish": "npm publish --tag beta",
+    "prepare": "npx tsc"
   },
   "author": "Tiago Siebler (https://github.com/tiagosiebler)",
   "contributors": [],
