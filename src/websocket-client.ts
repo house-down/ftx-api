@@ -354,7 +354,7 @@ export class WebsocketClient extends EventEmitter {
       if (msg.channel) {
         this.emit('update', msg);
       } else {
-        this.logger.debug('Websocket event: ', event.data || event);
+        // this.logger.debug('Websocket event: ', event.data || event);
         this.onWsMessageResponse(msg, wsKey);
       }
     } catch (e) {
